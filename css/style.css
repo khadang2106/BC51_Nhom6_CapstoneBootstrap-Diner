@@ -1,0 +1,112 @@
+/* ICON  */
+.icon{
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    background: rgba(130, 115, 252, .05);
+    color: #ff6600;
+}
+h6{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+h3{
+    font-size: 35px !important;
+    line-height: 40px;
+    font-weight: 600;
+    color: rgba(22,28,45,0.7);
+}
+
+
+/* CONTENT  */
+.header__content__right p{
+    /* color: #ffdfc9; */
+}
+.content{
+    /* background-color: gray; */
+}
+.content .header__content__left{
+    margin-right: 2.5rem;
+
+}
+.content .header__content__right{
+    font-size: 1.2rem;
+    text-decoration: none;
+    line-height: 2rem;
+}
+
+/* FEATURES  */
+.features{
+    background-color: #ff6900;
+}
+
+.features .block__image__ab{
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* -webkit-background-size: cover; */
+    /* width: 500px; */
+    min-height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.features .block__image__ab::before{
+    content: "";
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.features .block__image__right h6{
+    color: white !important;
+}
+.features .block__image__right h3{
+    color: rgba(22,28,45,0.7) ;
+}
+.features .block__image__right a{
+    color: rgba(22,28,45,0.7) !important;
+}
+.features .idea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    gap: 3.5rem;
+}
+.features .icon{
+    background: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.features .idea__sec{
+    text-decoration: none;
+    background-color: transparent;
+    display: block;
+    font-weight: 600;
+    line-height: 2px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.features .idea__first .icon span:hover{
+    color: yellow;
+}
+
+.features .container__first{
+    padding: 0 0;
+}
+.features .f__block__image__right{
+    padding: 0.5rem 5rem;
+}
+.features .block__image__right p{
+    color: #ffdfc9;
+}
