@@ -1,0 +1,8 @@
+body.dark .header__right input{
+    background-color: #232220;
+    border: 1px solid #232220;
+    color: #c2d0da;
+}
+body.dark .searchbox i{
+    color: #404040;
+}
