@@ -1,3 +1,9 @@
+/* GLOBAL */
+body.dark .title h3{
+    color: #eee;
+}
+
+/* HEADER */
 body.dark .header__right input{
     background-color: #232220;
     border: 1px solid #232220;
@@ -5,4 +11,9 @@ body.dark .header__right input{
 }
 body.dark .searchbox i{
     color: #404040;
+}
+
+/* CATEGORIES */
+body.dark .categories{
+    background-color: #282828;
 }
