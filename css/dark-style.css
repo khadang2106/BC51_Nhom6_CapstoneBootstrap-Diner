@@ -1,4 +1,7 @@
 /* GLOBAL */
+body.dark{
+    background-color: #232220;
+}
 body.dark .title h3{
     color: #eee;
 }
@@ -16,4 +19,15 @@ body.dark .searchbox i{
 /* CATEGORIES */
 body.dark .categories{
     background-color: #282828;
+}
+
+/* STATISTIC */
+body.dark .statistic__item{
+    background-color: #232220;
+}
+body.dark .statistic__item p:first-of-type{
+    color: #eee;
+}
+body.dark .statistic__item p:last-of-type{
+    color: #c2d0da;
 }
