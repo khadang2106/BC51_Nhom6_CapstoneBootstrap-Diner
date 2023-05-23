@@ -27,6 +27,9 @@
   <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css" />
 
+  <!-- MAGNIFIC POPUP CSS -->
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+
   <!-- DARK-THEME CSS -->
   <link rel="stylesheet" href="./css/dark-style.css">
   <!-- MAIN CSS -->
@@ -42,10 +45,10 @@
         <a class="navbar-brand" href="#">Diner</a>
         <div class="header__right">
           <form class="searchbox">
-            <input type="search" placeholder="Search here.." />
+            <input type="search" placeholder="Search here.."/>
             <i class="fa fa-search"></i>
           </form>
-          <i class="fa-regular fa-moon"></i>
+          <i class="fa-regular fa-moon"></i> 
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" onclick="openNav()">
             <i class="fa fa-bars"></i>
@@ -173,7 +176,7 @@
       <div class="categories__content">
         <div class="row">
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g1.jpg" alt="g1">
               </a>
@@ -186,7 +189,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g2.jpg" alt="g2">
               </a>
@@ -199,7 +202,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g3.jpg" alt="g3">
               </a>
@@ -212,7 +215,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g4.jpg" alt="g4">
               </a>
@@ -225,7 +228,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g5.jpg" alt="g5">
               </a>
@@ -238,7 +241,7 @@
             </div>
           </div>
           <div class="col-6 col-lg-4 mt-4 pt-lg-2">
-            <div class="card">
+            <div class="card categories__item">
               <a href="#">
                 <img class="card-img img-fluid" src="./img/g6.jpg" alt="g6">
               </a>
@@ -312,10 +315,115 @@
     </div>
   </section>
   <!-- INTROVID -->
+  <section class="introVid">
+    <div class="container py-5">
+      <div class="introVid__content py-lg-5">
+        <div class="introVid__poster d-flex justify-content-center align-items-center">
+          <div class="introVid__overlay"></div>
+          <div class="introVid__btn text-center">
+            <a href="#popupVid" class="popup-with-zoom-anim"><i class="fa fa-play"></i></a>
+          </div>
+        </div>
+        <div id="popupVid" class="zoom-anim-vid mfp-hide">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- POSTS -->
+  <section class="posts py-5">
+    <div class="container py-2 py-md-5">
+      <div class="title text-center">
+        <h6>Latest Posts</h6>
+        <h3>Blog Posts</h3>
+      </div>
+      <div class="posts__content">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="card posts__item">
+              <div class="card-header p-0">
+                <a href="#">
+                  <img src="./img/g1.jpg" class="card-img-top img-fluid" alt="g1">
+                </a>
+                <a href="#">Drinks</a>
+              </div>
+              <div class="card-body p-0">
+                <a href="#">
+                  <h5 class="card-title">Hello world!</h5>
+                </a>
+                <div class="card-text d-flex justify-content-between align-items-center mt-3">
+                  <a href="#" class="d-flex">
+                    <img src="./img/w3layouts-logo.jpeg" alt="w3layoutslogo" class="img-fluid">
+                    <span>W3Layouts</span>
+                  </a>
+                  <a href="#" class="diner-btn">
+                    Read More
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>         
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="card posts__item">
+              <div class="card-header p-0">
+                <a href="#">
+                  <img src="./img/g7.jpg" class="card-img-top img-fluid" alt="g7">
+                </a>
+                <a href="#">Drinks</a>
+              </div>
+              <div class="card-body p-0">
+                <a href="#">
+                  <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
+                </a>
+                <div class="card-text d-flex justify-content-between align-items-center mt-3">
+                  <a href="#" class="d-flex">
+                    <img src="./img/w3layouts-logo.jpeg" alt="w3layoutslogo" class="img-fluid">
+                    <span>W3Layouts</span>
+                  </a>
+                  <a href="#" class="diner-btn">
+                    Read More
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>         
+          </div>
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="card posts__item">
+              <div class="card-header p-0">
+                <a href="#">
+                  <img src="./img/g5.jpg" class="card-img-top img-fluid" alt="g5">
+                </a>
+                <a href="#">Food</a>
+              </div>
+              <div class="card-body p-0">
+                <a href="#">
+                  <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
+                </a>
+                <div class="card-text d-flex justify-content-between align-items-center mt-3">
+                  <a href="#" class="d-flex">
+                    <img src="./img/w3layouts-logo.jpeg" alt="w3layoutslogo" class="img-fluid">
+                    <span>W3Layouts</span>
+                  </a>
+                  <a href="#" class="diner-btn">
+                    Read More
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- FEEDBACK -->
   <!-- FOOTER -->
   <!-- BACK TO TOP -->
+  <a href="#" class="backToTop cd-top text-replace js-cd-top">
+    <i class="fa fa-angle-up"></i>
+  </a>
 
   <br />
   <br />
@@ -327,25 +435,7 @@
   <br />
   <br />
   <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+
 
   <!-- jQuery library -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -365,7 +455,8 @@
   <script src="./js/jquery.counterup.min.js"></script>
   <script>
     $('.counter').counterUp({
-      time: 6000
+      time: 6000,
+      offset: 999
     });
   </script>
 
@@ -382,6 +473,35 @@
       document.getElementById("dinerNav").style.display = "none";
     }
   </script>
+
+  <!-- MAGNIFIC POPUP JS -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".popup-with-zoom-anim").magnificPopup({
+        type: "inline",
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: "auto",
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: "my-mfp-zoom-in"
+      });
+    });
+  </script>
+
+  <!-- BACK TO TOP JS -->
+  <script src="./js/backtotop/util.js"></script>
+  <script src="./js/backtotop/main-backtotop.js"></script>
+
+  <!-- MAIN JS -->
+  <!-- <script src="./js/index.js"></script> -->
 </body>
 
 </html>
