@@ -7,6 +7,15 @@ body.dark .title h3{
 }
 
 /* HEADER */
+body.dark .header__right .themeIcon{
+    transform: rotate(0);
+}
+body.dark .themeIcon i:first-of-type{
+    display: none;
+}
+body.dark .themeIcon i:last-of-type{
+    display: block;
+}
 body.dark .header__right input{
     background-color: #232220;
     border: 1px solid #232220;
