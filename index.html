@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body class="dark">
+<body id="dinerBody">
   <!-- HEADER -->
   <header class="header">
     <div class="container">
@@ -48,7 +48,10 @@
             <input type="search" placeholder="Search here.."/>
             <i class="fa fa-search"></i>
           </form>
-          <i class="fa-regular fa-moon"></i> 
+          <div class="themeIcon">
+            <i id="darkThemeIcon" class="fa-regular fa-moon"></i>
+            <i id="lightThemeIcon" class="fa-regular fa-sun"></i>
+          </div>
           <!-- Toggler/collapsibe Button -->
           <button class="navbar-toggler" type="button" onclick="openNav()">
             <i class="fa fa-bars"></i>
@@ -501,7 +504,7 @@
   <script src="./js/backtotop/main-backtotop.js"></script>
 
   <!-- MAIN JS -->
-  <!-- <script src="./js/index.js"></script> -->
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
