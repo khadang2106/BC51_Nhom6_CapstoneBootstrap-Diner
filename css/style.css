@@ -366,7 +366,7 @@ html, body{
     transform: translateY(10%);
     z-index: 1;
 }
-.categories__content .card{
+.categories__content .categories__item{
     background-color: transparent;
     border: none;
 }
@@ -377,7 +377,7 @@ html, body{
 .categories__content .card-img:hover{
     opacity: 0.85;
 }
-.categories__content .card a{
+.categories__content .categories__item a{
     text-decoration: none;
 }
 .card-img-overlay .card-title{
@@ -394,7 +394,7 @@ html, body{
     color: #ffc600;
     opacity: 0.9;
 }
-.categories__content .card::after{
+.categories__content .categories__item::after{
     content: "";
     width: 100%;
     height: 40%;
@@ -415,6 +415,9 @@ html, body{
     .card-img-overlay .card-title{
         font-size: 18px;
         line-height: 28px;
+    }
+    .card-img-overlay .card-text{
+        font-size: 16px;
     }
 }
 
@@ -544,5 +547,225 @@ html, body{
 @media screen and (max-width: 480px){
     .statistic__item p:last-of-type{
         font-size: 0.9rem;
+    }
+}
+
+/* INTROVID */
+.introVid__content .introVid__poster{
+    background-image: url(../img/banner3.jpg);
+    background-position: center;
+    min-height: 500px;
+    border-radius: 6px;
+    position: relative;
+}
+.introVid__poster .introVid__overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+}
+.introVid__poster .introVid__btn{
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    animation: ripple 1s linear infinite;
+}
+.introVid__btn:hover{
+    transform: scale(1.2);
+    background-color: #ff6600;
+}
+.introVid__btn a{
+    font-size: 26px;
+    color: #ff6600;
+    margin-left: 5px;
+    transition: all .3s;
+}
+.introVid__btn:hover a{
+    color: white;
+}
+#popupVid{
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+#popupVid iframe{
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close{
+    color: white;
+}
+.mfp-close, .mfp-close:active{
+    top: -40px;
+}
+/**
+   * Fade-zoom animation for first dialog
+   */
+/* start state */
+  .my-mfp-zoom-in .zoom-anim-vid {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+  }
+  
+  /* animate in */
+  .my-mfp-zoom-in.mfp-ready .zoom-anim-vid {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* animate out */
+  .my-mfp-zoom-in.mfp-removing .zoom-anim-vid {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  
+  /* Dark overlay, start state */
+  .my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  /* animate in */
+  .my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.95;
+  }
+  
+  /* animate out */
+  .my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+
+/* INTROVID-RESPONSIVE */
+@media screen and (max-width: 900px){
+    .introVid__content .introVid__poster{
+        min-height: 400px;
+    }
+}
+@media screen and (max-width: 640px){
+    .introVid__content .introVid__poster{
+        min-height: 350px;
+    }
+}
+@media screen and (max-width: 380px){
+    .introVid__content .introVid__poster{
+        min-height: 300px;
+    }
+}
+
+/* POSTS */
+.posts{
+    background-color: #f7f7f7;
+}
+.posts a{
+    text-decoration: none;
+    transition: all .5s;
+}
+.posts .posts__item, .posts__item .card-header{
+    border: none;
+    background-color: transparent;
+}
+.posts__item .card-header{
+    position: relative;
+}
+.posts__item .card-header img{
+    border-radius: 6px;
+}
+.posts__item .card-header a:last-of-type{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ff6600;
+}
+.posts__item .card-header>a:hover{
+    color: #5431ac;
+}
+.posts__item .card-body .card-title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #232121;
+    line-height: 34px;
+    margin: 25px 0 15px 0;
+}
+.posts__item .card-body .card-text a:first-of-type{
+    align-items: center;
+    gap: 10px;
+}
+.posts__item .card-body .card-text img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.posts__item .card-body .card-text span{
+    font-weight: 700;
+    color: #232121;
+    letter-spacing: 0.02rem;
+}
+.posts__item .card-body .card-text .diner-btn{
+    letter-spacing: 0.02rem;
+    color: #232121;
+    opacity: 0.9;
+    border: none;
+    padding: 0;
+}
+.posts__item .card-body .card-text .diner-btn:hover{
+    color: #ff6600;
+    background-color: transparent;
+}
+
+/* POSTS-RESPONSIVE */
+@media screen and (max-width: 991px){
+    .posts__item .card-body .card-title{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/* BACK TO TOP */
+.backToTop{
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+.cd-top--is-visible{
+    opacity: 1;
+    visibility: visible;
+}
+.backToTop i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ff6600;
+    color: white;
+}
+
+
+
+
+/* ANIMATION */
+@keyframes ripple{
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 
+        0 0 0 10px rgb(255 255 255 / 25%), 
+        0 0 0 20px rgb(255 255 255 / 25%);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 
+        0 0 0 20px rgb(255 255 255 / 25%), 
+        0 0 0 40px rgba(50, 100, 245, 0);
     }
 }

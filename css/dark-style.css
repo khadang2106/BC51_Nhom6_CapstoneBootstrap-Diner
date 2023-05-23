@@ -31,3 +31,20 @@ body.dark .statistic__item p:first-of-type{
 body.dark .statistic__item p:last-of-type{
     color: #c2d0da;
 }
+
+/* POSTS */
+body.dark .posts{
+    background-color: #282828;
+}
+body.dark .posts__item .card-body .card-title{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text span{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text .diner-btn{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text .diner-btn:hover{
+    color: #ff6600;
+}
