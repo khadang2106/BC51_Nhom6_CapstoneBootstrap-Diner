@@ -573,29 +573,26 @@ html, body{
     left: 0;
     border-radius: 6px;
 }
-.introVid__poster .introVid__btn{
+.introVid__btn a{
     width: 80px;
     height: 80px;
     line-height: 80px;
     border-radius: 50%;
     background-color: white;
+    display: inline-block;
+    font-size: 26px;
+    color: #ff6600;
     position: relative;
-    cursor: pointer;
     transition: all .3s ease-in-out;
     animation: ripple 1s linear infinite;
 }
-.introVid__btn:hover{
+.introVid__btn:hover a{
     transform: scale(1.2);
     background-color: #ff6600;
-}
-.introVid__btn a{
-    font-size: 26px;
-    color: #ff6600;
-    margin-left: 5px;
-    transition: all .3s;
-}
-.introVid__btn:hover a{
     color: white;
+}
+.introVid__btn a i{
+    margin-left: 5px;
 }
 #popupVid{
     max-width: 750px;
