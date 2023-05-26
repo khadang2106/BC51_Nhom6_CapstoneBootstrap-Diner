@@ -737,6 +737,7 @@ html, body{
 /* BACK TO TOP */
 .backToTop{
     position: fixed;
+    z-index: 99;
     bottom: 55px;
     right: 20px;
     opacity: 0;
