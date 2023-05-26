@@ -1,3 +1,21 @@
+/* GLOBAL */
+body.dark{
+    background-color: #232220;
+}
+body.dark .title h3{
+    color: #eee;
+}
+
+/* HEADER */
+body.dark .header__right .themeIcon{
+    transform: rotate(0);
+}
+body.dark .themeIcon i:first-of-type{
+    display: none;
+}
+body.dark .themeIcon i:last-of-type{
+    display: block;
+}
 body.dark .header__right input{
     background-color: #232220;
     border: 1px solid #232220;
@@ -5,4 +23,37 @@ body.dark .header__right input{
 }
 body.dark .searchbox i{
     color: #404040;
+}
+
+/* CATEGORIES */
+body.dark .categories{
+    background-color: #282828;
+}
+
+/* STATISTIC */
+body.dark .statistic__item{
+    background-color: #232220;
+}
+body.dark .statistic__item p:first-of-type{
+    color: #eee;
+}
+body.dark .statistic__item p:last-of-type{
+    color: #c2d0da;
+}
+
+/* POSTS */
+body.dark .posts{
+    background-color: #282828;
+}
+body.dark .posts__item .card-body .card-title{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text span{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text .diner-btn{
+    color: #eee;
+}
+body.dark .posts__item .card-body .card-text .diner-btn:hover{
+    color: #ff6600;
 }
