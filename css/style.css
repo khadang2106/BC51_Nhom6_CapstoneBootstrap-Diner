@@ -426,6 +426,40 @@ html, body{
         font-size: 16px;
     }
 }
+/* SERVICE  */
+.box-wrap {
+    padding: 40px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    background-color: white;
+    position: relative;
+    border: 0.1px solid;
+}
+.box-wrap-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}
+.home-services .box-wrap-grid .icon:hover{
+    background-color: #ff6600;
+    color: white;
+}
+.home-services .box-wrap-grid .icon {
+    font-size: 2rem;
+}
+.home-services .box-wrap-grid .info h4 a{
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 600;
+}
+.home-services .box-wrap-grid .info p{
+    margin-bottom: 0.5rem !important;
+}
+.home-services .box-wrap p {
+        color: rgba(22, 28, 45, 0.7);
+}
+
 
 /* OVERVIEW */
 .overview{
@@ -733,6 +767,103 @@ html, body{
         line-height: 30px;
     }
 }
+/* FEEDBACK  */
+.carousel-item{
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+.carousel-caption .img_thumb{
+    width: 120px;
+    margin: auto;
+}
+.carousel-caption .img_thumb img{
+    border-radius: 50%;
+}
+.carousel-caption h3 {
+    font-size: 2rem !important;
+    color: black !important;
+}
+.carousel-caption p {
+    font-size: 20px;
+    color: gray;
+}
+.carousel-indicators .active{
+    background-color: #ff6600;
+}
+.carousel-indicators li:hover{
+    opacity: 1;
+    background-color: #ff6600;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    margin: 0 0.5rem;
+}
+.carousel-caption span{
+    font-size: 2rem;
+}
+
+/* FOOTER  */
+.footer {
+    background-color: black;
+    color: #fff;
+  }
+  
+  .footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 2rem 0;
+  }
+  .footer .HomeFooter ul {
+      list-style: none;
+  }
+  .footer .HomeFooter .info_footer ul li a{
+      text-decoration: none;
+  }
+  .footer .HomeFooter .icon_footer ul{
+      display: flex !important;
+      border-radius: 1rem;
+  }
+  .footer .HomeFooter .info_footer .social-icons a{
+      margin-right: 10px;
+      color: var(--primary-color);
+      /* display: inline-block; */
+      text-align: center;
+      font-size: 16px;
+      width: 36px !important;
+      height: 36px !important;
+      line-height: 36px;
+      transition: 0.3s;
+  }
+  .footer .FooterSubscribe form input{
+      padding: 14px 20px;
+      font-size: 18px;
+      line-height: 28px;
+      border: 1px solid transparent;
+      outline: none;
+      width: 100%;
+      border-radius: 10px;
+  }
+  .footer .btn-style{
+      padding: 12px 45px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 700;
+      transition: 0.3s ease-in;
+      border-radius: 10px;
+      border: 2px solid transparent;
+      background-color: #ff6900;
+  }
+  .footer .bottom-footer a{
+      text-decoration: none;
+      color: #ff6600;
+  }
+  .footer .social-icons {
+      display: flex;
+  }
 
 /* BACK TO TOP */
 .backToTop{
