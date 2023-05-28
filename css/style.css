@@ -436,34 +436,70 @@ html, body{
     transition: all 0.5s ease 0s;
     border-radius: 8px;
     box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
-    background-color: white;
     position: relative;
-    border: 0.1px solid;
+    border: 1px solid #eee;
 }
 .box-wrap-grid {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 30px;
 }
-.home-services .box-wrap-grid .icon:hover{
+.home-services .icon{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 6px;
+    background: white;
+    color: #ff6600;
+    font-size: 25px;
+    background-color: rgba(130,115,252,0.05);
+    transition: all .3s ease-in-out;
+}
+.home-services .box-wrap:hover{
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+.home-services .box-wrap:hover .icon{
     background-color: #ff6600;
     color: white;
 }
-.home-services .box-wrap-grid .icon {
-    font-size: 2rem;
-}
 .home-services .box-wrap-grid .info h4 a{
     text-decoration: none !important;
-    color: black !important;
+    color: black;
     font-weight: 600;
+    display: block;
+    transition: all .5s;
+}
+.home-services .box-wrap-grid .info a:hover{
+    color: #ff6600;
 }
 .home-services .box-wrap-grid .info p{
     margin-bottom: 0.5rem !important;
 }
 .home-services .box-wrap p {
-        color: rgba(22, 28, 45, 0.7);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+    color: rgba(22, 28, 45, 0.7);
 }
 
+/* SERVICES-RESPONSIVE */
+@media screen and (max-width: 1080px){
+    .home-services .box-wrap-grid .info h4 a{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .home-services .box-wrap p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+@media screen and (max-width: 415px){
+    .box-wrap{
+        padding: 30px;
+    }
+}
 
 /* OVERVIEW */
 .overview{
