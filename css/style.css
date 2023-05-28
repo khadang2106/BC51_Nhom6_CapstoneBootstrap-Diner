@@ -937,61 +937,139 @@ html, body{
 /* FOOTER  */
 .footer {
     background-color: black;
-    color: #fff;
-  }
-  
-  .footer h4 {
-    font-size: 24px;
+}
+.footer a{
+    text-decoration: none;
+    transition: all .5s;
+}
+.footer a:hover{
+    color: #ff6600;
+}
+.HomeFooter .logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    line-height: 26px;
+}
+.info_footer h4, .footer-title-29{
+    font-size: 22px;
     font-weight: 700;
-    margin: 2rem 0;
-  }
-  .footer .HomeFooter ul {
-      list-style: none;
-  }
-  .footer .HomeFooter .info_footer ul li a{
-      text-decoration: none;
-  }
-  .footer .HomeFooter .icon_footer ul{
-      display: flex !important;
-      border-radius: 1rem;
-  }
-  .footer .HomeFooter .info_footer .social-icons a{
-      margin-right: 10px;
-      color: var(--primary-color);
-      /* display: inline-block; */
-      text-align: center;
-      font-size: 16px;
-      width: 36px !important;
-      height: 36px !important;
-      line-height: 36px;
-      transition: 0.3s;
-  }
-  .footer .FooterSubscribe form input{
-      padding: 14px 20px;
-      font-size: 18px;
-      line-height: 28px;
-      border: 1px solid transparent;
-      outline: none;
-      width: 100%;
-      border-radius: 10px;
-  }
-  .footer .btn-style{
-      padding: 12px 45px;
-      font-size: 16px;
-      line-height: 30px;
-      font-weight: 700;
-      transition: 0.3s ease-in;
-      border-radius: 10px;
-      border: 2px solid transparent;
-      background-color: #ff6900;
-  }
-  .footer .bottom-footer a{
-      text-decoration: none;
-      color: #ff6600;
-  }
-  .footer .social-icons {
-      display: flex;
-  }
+    color: white;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.footer p, .info_footer a{
+    font-size: 17px;
+    color: #a5a2a1;
+    line-height: 26px;
+}
+.HomeFooter .info_footer .social-icons a{
+    margin-right: 10px;
+    color: #ff6600;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.footer .HomeFooter .info_footer .social-icons a:hover{
+    background-color: #ff6600;
+    color: white;
+}
+.social-icons i{
+    font-size: 15px;
+}
+.footer .HomeFooter ul{
+    margin: 0;
+}
+.footer .HomeFooter li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer .HomeFooter li:nth-of-type(2){
+    margin-bottom: 0;
+}
+.footer .FooterSubscribe form input{
+    padding: 14px 20px;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid transparent;
+    color: rgba(22,28,45,0.7);
+    outline: none;
+    width: 100%;
+    border-radius: 6px;
+}
+.footer .FooterSubscribe form input:focus{
+    border: 1px solid #ff6600;
+    color: #111;
+}
+.footer .btn-style{
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-color: #ff6600;
+}
+.footer .btn-style:hover{
+    color: white;
+    background-color: #ff6600;
+    border: 2px solid #ff6600;
+    opacity: 0.8;
+}
+.bottom-footer{
+    padding: 1.2rem 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.bottom-footer p{
+    font-size: 17px;
+    color: #ddd;
+    margin: 0;
+}
+.bottom-footer a{
+    color: #ff6600;
+}
+.bottom-footer a:hover{
+    color: white;
+}
+
+/* FOOTER-RESPONSIVE */
+@media screen and (max-width: 992px){
+    .info_footer .social-icons{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .info_footer h4, .footer-title-29{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .bottom-footer p{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px){
+    .bottom-footer p{
+        line-height: 26px;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer .btn-style{
+        padding: 13px 21.5px;
+    }
+}
+@media screen and (max-width: 415px){
+    .HomeFooter .logo{
+        font-size: 26px;
+    }
+    .footer .HomeFooter li{
+        margin-bottom: 8px;
+    }
+}
 
 /* BACK TO TOP */
 .backToTop{
