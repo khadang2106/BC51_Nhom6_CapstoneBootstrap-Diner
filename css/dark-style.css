@@ -25,6 +25,16 @@ body.dark .searchbox i{
     color: #404040;
 }
 
+/* CONTENT */
+body.dark .content .header__content__right p{
+    color: #c2d0da;
+}
+
+/* FEATURES */
+body.dark .features .idea__sec{
+    color: #eee;
+}
+
 /* CATEGORIES */
 body.dark .categories{
     background-color: #282828;
