@@ -81,3 +81,14 @@ body.dark .posts__item .card-body .card-text .diner-btn{
 body.dark .posts__item .card-body .card-text .diner-btn:hover{
     color: #ff6600;
 }
+
+/* FEEDBACK */
+body.dark .carousel-caption h3{
+    color: #eee;
+}
+body.dark .carousel-caption p{
+    color: #c2d0da;
+}
+body.dark .carousel-caption .people-info h3{
+    color: #eee;
+}
