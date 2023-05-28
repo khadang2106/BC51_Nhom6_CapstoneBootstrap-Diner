@@ -92,3 +92,12 @@ body.dark .carousel-caption p{
 body.dark .carousel-caption .people-info h3{
     color: #eee;
 }
+
+/* FOOTER */
+body.dark .HomeFooter .info_footer .social-icons a{
+    background-color: #232220;
+}
+body.dark .footer .FooterSubscribe form input{
+    background-color: #232220;
+    color: #c2d0da;
+}
