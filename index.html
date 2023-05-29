@@ -23,10 +23,6 @@
   <!-- ANIMATE CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- OWL CAROUSEL CSS -->
-  <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css" />
-
   <!-- MAGNIFIC POPUP CSS -->
   <link rel="stylesheet" href="./css/magnific-popup.css">
 
@@ -697,9 +693,6 @@
     });
   </script>
 
-  <!-- OWL CAROUSEL JS -->
-  <script src="./js/owl.carousel.min.js"></script>
-
   <!-- OVERLAY-NAVBAR JS -->
   <script>
     function openNav() {
@@ -730,6 +723,40 @@
         removalDelay: 300,
         mainClass: "my-mfp-zoom-in"
       });
+    });
+  </script>
+  
+  <!-- TOUCHSWIPE JS (PLUGIN FOR BS CAROUSEL) -->
+  <script src="./js/jquery.touchSwipe.min.js"></script>
+  <script>
+    // init
+    $(".carousel").carousel({
+      interval: false,
+      pause: true,
+      touch: true
+    });
+
+    // enable prev/next navigation
+    $(".carousel .carousel-control-prev").on("click", function () {
+      $(".carousel").carousel("prev");
+    });
+
+    $(".carousel .carousel-control-next").on("click", function () {
+      $(".carousel").carousel("next");
+    });
+
+    $(".carousel .carousel-inner").swipe({
+      swipeLeft: function (event, direction, distance, duration, fingerCount) {
+        this.parent().carousel("next");
+      },
+      swipeRight: function () {
+        this.parent().carousel("prev");
+      },
+      threshold: 0,
+      tap: function (event, target) {
+        window.location = $(this).find(".carousel-item.active a").attr("href");
+      },
+      excludedElements: "label, button, input, select, textarea, .noSwipe"
     });
   </script>
 
